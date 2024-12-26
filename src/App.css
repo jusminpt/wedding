@@ -1,0 +1,27 @@
+/* In App.css or your main stylesheet */
+html, body {
+  height: 100%; /* Make sure the html and body elements take up 100% of the height */
+  margin: 0;    /* Remove default margins */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* The main container takes up 100% of the viewport height */
+}
+
+.main-content {
+  flex-grow: 1; /* This makes the content area take all available space */
+}
+
+.sticky-footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background-color: #e2e2e2;
+  color: rgb(71, 71, 71);
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 14px;
+}
