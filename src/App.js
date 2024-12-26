@@ -12,6 +12,7 @@ function App() {
   return (
     <Router> {/* Only one Router component here */}
       <div className="App">
+        
         {/* Main content */}
         <Routes> {/* Use Routes instead of Switch in v6 */}
           <Route path="/" element={<Home />} /> {/* Default route for Home */}

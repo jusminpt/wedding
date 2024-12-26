@@ -1,4 +1,6 @@
-.img-fluid{
+.home{
+    background-image: url('../images/invitation_1.png');
+    background-size: cover;
+    background-position: center top;
     height: 100vh;
-    width: auto;
 }

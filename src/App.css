@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=WindSong:wght@400;500&display=swap');
+
 /* In App.css or your main stylesheet */
 html, body {
-  height: 100%; /* Make sure the html and body elements take up 100% of the height */
+  height: 90vh; /* Make sure the html and body elements take up 100% of the height */
   margin: 0;    /* Remove default margins */
+  background-image: url('images/bg.png'); /* Path to your image in public folder */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .App {
@@ -12,6 +18,28 @@ html, body {
 
 .main-content {
   flex-grow: 1; /* This makes the content area take all available space */
+  padding: 20px;
+}
+
+.sticky-header{
+  position: sticky;
+  top: 0;
+  height: 18vh;
+  width: 100%;
+  color: #52604b;
+  display: flex;                 
+  justify-content: center;       
+  align-items: last baseline;         
+  color: #52604b;
+  text-align: center;  
+  padding: 10px;
+  font-size: 8px;
+  font-family: 'WindSong','Roboto', sans-serif;;
+  font-weight: 500;
+  text-shadow: 
+    0 0 5px rgba(255, 255, 255, 0.6),  /* Light white glow */
+    0 0 10px rgba(255, 255, 255, 0.8),  /* Stronger white glow */
+    0 0 15px rgba(255, 255, 255, 1);
 }
 
 .sticky-footer {
