@@ -1,5 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
-
-.header-logo{
-    height: 10vh;
-}
+.sticky-header{
+    position: sticky;
+    top: 0;
+    height: 18vh;
+    width: 100%;
+    color: #52604b;
+    display: flex;                 
+    justify-content: center;       
+    align-items: last baseline;         
+    color: #52604b;
+    text-align: center;  
+    padding: 10px;
+    font-size: 4px;
+    font-family: 'WindSong','Roboto', sans-serif;;
+    font-weight: 500;
+    text-shadow: 
+      0 0 5px rgba(255, 255, 255, 0.6),  /* Light white glow */
+      0 0 10px rgba(255, 255, 255, 0.8),  /* Stronger white glow */
+      0 0 15px rgba(255, 255, 255, 1);
+  }

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=WindSong:wght@400;500&display=swap');
 
-/* In App.css or your main stylesheet */
+/* Ensure html and body can grow as needed */
 html, body {
-  height: 90vh; /* Make sure the html and body elements take up 100% of the height */
+  height: 100%; /* Allow the body to expand based on content height */
   margin: 0;    /* Remove default margins */
   background-image: url('images/bg.png'); /* Path to your image in public folder */
   background-size: cover;
@@ -13,43 +13,25 @@ html, body {
 .App {
   display: flex;
   flex-direction: column;
-  height: 100vh; /* The main container takes up 100% of the viewport height */
+  min-height: 100vh; 
 }
 
 .main-content {
-  flex-grow: 1; /* This makes the content area take all available space */
+  flex: 1; /* Allow the main content to grow and push the footer down */
   padding: 20px;
-}
+  overflow: auto; 
+  margin-bottom: 12vh;
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Vertically center items */
+  align-items: center; /* Horizontally center items */
+  text-align: center; /* Center the text inside elements */
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
 
-.sticky-header{
-  position: sticky;
-  top: 0;
-  height: 18vh;
-  width: 100%;
-  color: #52604b;
-  display: flex;                 
-  justify-content: center;       
-  align-items: last baseline;         
-  color: #52604b;
-  text-align: center;  
-  padding: 10px;
-  font-size: 8px;
-  font-family: 'WindSong','Roboto', sans-serif;;
-  font-weight: 500;
-  text-shadow: 
-    0 0 5px rgba(255, 255, 255, 0.6),  /* Light white glow */
-    0 0 10px rgba(255, 255, 255, 0.8),  /* Stronger white glow */
-    0 0 15px rgba(255, 255, 255, 1);
-}
-
-.sticky-footer {
-  position: sticky;
-  bottom: 0;
-  width: 100%;
-  background-color: #e2e2e2;
-  color: rgb(71, 71, 71);
-  text-align: center;
-  text-decoration: none;
-  padding: 10px;
-  font-size: 14px;
+  h1{
+    font-family: 'Playfair',sans-serif;
+    font-size: 50px;
+    color: #52604b;
+  }
 }

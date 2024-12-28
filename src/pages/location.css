@@ -1,27 +1,26 @@
 .location {
-  display: flex; /* Enable Flexbox */
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center; /* Vertically center items */
-  align-items: center; /* Horizontally center items */
-  text-align: center; /* Center the text inside elements */
-  font-family: "Lexend Exa", "Roboto", sans-serif;
-  font-weight: 200;
-  h1 {
-    font-weight: 400;
-  }
+background-color: white;
+padding-top: 20px;
 }
+
 
 .card {
   margin: 20px;
+  text-align: left;
   border: none;
-  border-radius: 20px;
+  border-radius: 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
     /* Light shadow */ 0 6px 20px rgba(0, 0, 0, 0.1); /* Stronger shadow for depth */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
 }
 
+.card-body{
+  padding: 20px 30px;
+}
+
 .card-text{
     text-align: justify;
+    line-height: 1.2em;
 }
 
 /* Optional: Add hover effect to make it pop more when hovered */
@@ -31,3 +30,11 @@
     /* Stronger shadow */ 0 8px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
 }
 
+.card-img-top{
+  border-radius: 0px;
+  opacity: 0.9
+}
+
+.fas.fa-arrow-right {
+  margin-left: 5px;
+}

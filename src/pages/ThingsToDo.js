@@ -1,7 +1,10 @@
 import React from 'react';
+import Header from '../components/Header';
 
 const ThingsToDo = () => {
   return (
+    <div>
+      <Header />
     <div className='main-content'>
       <h1>Things to Do</h1>
       <p>If you have some free time, here are some fun activities to do around the city:</p>
@@ -11,6 +14,7 @@ const ThingsToDo = () => {
         <li>Go shopping at the Local Mall</li>
         <li>Check out the Beach - A relaxing spot by the sea</li>
       </ul>
+    </div>
     </div>
   );
 };
