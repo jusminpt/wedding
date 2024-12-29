@@ -1,8 +1,12 @@
 .location {
-background-color: white;
-padding-top: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
-
 
 .card {
   margin: 20px;
@@ -14,13 +18,13 @@ padding-top: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
 }
 
-.card-body{
+.card-body {
   padding: 20px 30px;
 }
 
-.card-text{
-    text-align: justify;
-    line-height: 1.2em;
+.card-text {
+  text-align: justify;
+  line-height: 1.2em;
 }
 
 /* Optional: Add hover effect to make it pop more when hovered */
@@ -30,9 +34,9 @@ padding-top: 20px;
     /* Stronger shadow */ 0 8px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
 }
 
-.card-img-top{
+.card-img-top {
   border-radius: 0px;
-  opacity: 0.9
+  opacity: 0.9;
 }
 
 .fas.fa-arrow-right {

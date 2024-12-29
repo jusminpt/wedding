@@ -12,7 +12,7 @@ const Location = () => {
         <div className="container location">
           <h1>Wedding Location</h1>
           <div className="card" style={{ width: "18rem" }}>
-            <img src={location_1} class="card-img-top" alt="location1"/>
+            <img src={location_1} className="card-img-top" alt="location1"/>
             <div className="card-body">
               <h5 className="card-title">Morning Ceremony</h5>
               <p className="card-text">
@@ -29,7 +29,7 @@ const Location = () => {
             </div>
           </div>
           <div className="card" style={{ width: "18rem" }}>
-          <img src={location_2} class="card-img-top" alt="location2"/>
+          <img src={location_2} className="card-img-top" alt="location2"/>
             <div className="card-body">
               <h5 className="card-title">Evening Ceremony</h5>
               <p className="card-text">
