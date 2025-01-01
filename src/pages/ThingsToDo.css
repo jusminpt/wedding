@@ -1,0 +1,37 @@
+.todo {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 40px 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+
+  p {
+    text-align: left;
+  }
+}
+
+.scrollspy-example {
+  background-color: transparent;
+}
+
+.navbar .nav-link.active {
+  background-color: #52604b; /* Change to your preferred background color */
+  color: white; /* Change text color */
+}
+
+.navbar .nav-link::after {
+  color: #52604b;
+}
+
+.nav-item a {
+  color: black;
+  text-decoration: none;
+}
+
+.card-img-top {
+  height: 200px; /* Set a fixed height for all card images */
+  object-fit: cover; /* Ensures images cover the entire area without distortion */
+  width: 100%; /* Make sure the width is 100% to fill the container */
+}
